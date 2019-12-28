@@ -30,6 +30,12 @@ namespace ModernDev.InTouch
         public string LastName { get; set; }
 
         /// <summary>
+        ///  User birth date, format: DD.MM.YYYY.
+        /// </summary>
+        [MethodParam(Name = "birthday", IsRequired = true)]
+        public string Birthday { get; set; }
+
+        /// <summary>
         /// Your application ID. 
         /// </summary>
         [MethodParam(Name = "client_id", IsRequired = true)]
